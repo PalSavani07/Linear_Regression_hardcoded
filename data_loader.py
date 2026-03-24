@@ -45,5 +45,3 @@ def load_data(filepath):
     print(f"       Rows skipped          : {skipped}")
  
     return X, Y
-
-
