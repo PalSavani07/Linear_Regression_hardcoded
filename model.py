@@ -53,7 +53,7 @@ def train(X,Y,lr,epochs):
     print("  Training Started")
     print(f"  Samples   : {len(X)}")
     print(f"  Features  : {n_features}")
-    print(f"  LR        : {lr}")
+    print(f"  Learning Rate        : {lr}")
     print(f"  Epochs    : {epochs}")
     print("=" * 55)
 
