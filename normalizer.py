@@ -35,7 +35,7 @@ def normalize(data,mins,maxs):
             range_val = maxs[j] - mins[j]
  
             if range_val == 0:
-                # All values in this column are the same → scale to 0
+                
                 scaled_row.append(0.0)
             else:
                 scaled_row.append((data[i][j] - mins[j]) / range_val)
@@ -46,9 +46,7 @@ def normalize(data,mins,maxs):
 
 
 def normalize_1d(data,mins,maxs):
-    """
-    Applies Min-Max normalization to a 1D list (e.g. Y values).
-    """
+
 
     range_val=maxs-mins
 

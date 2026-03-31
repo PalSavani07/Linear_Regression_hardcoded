@@ -21,15 +21,15 @@ y_max = max(Y)
 X_scaled = normalize(X, x_mins, x_maxs)
 Y_scaled  = normalize_1d(Y, y_min, y_max)
  
-print(f"  X normalized  →  sample row : {[round(v, 4) for v in X_scaled[0]]}")
-print(f"  Y normalized  →  sample val : {round(Y_scaled[0], 4)}")
-print(f"  Y range       →  min=${y_min:.2f}  max=${y_max:.2f}")
+print(f"X normalized  →  sample row : {[round(v, 4) for v in X_scaled[0]]}")
+print(f"Y normalized  →  sample val : {round(Y_scaled[0], 4)}")
+print(f"Y range       →  min=${y_min:.2f}  max=${y_max:.2f}")
 
 print("\n" + "=" * 55)
 print("  STEP 3 — Training Model")
 print("=" * 55)
  
-# Hyperparameters — tune these if needed
+
 LEARNING_RATE = 0.1
 EPOCHS        = 1000
  
